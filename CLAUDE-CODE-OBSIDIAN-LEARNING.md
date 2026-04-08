@@ -143,3 +143,33 @@
 ---
 
 *此索引由 cc 自动维护和更新*
+
+---
+
+## 🎓 Thariq Shihipar - Claude Code 团队核心成员
+
+**Thariq Shihipar** 是 Anthropic Claude Code 团队的 Member of Technical Staff，他分享了构建 Claude Code 的核心经验：
+
+### 已关注
+- LinkedIn: [thariqshihipar](https://www.linkedin.com/in/thariqshihipar)
+- Twitter/X: [@trq212](https://x.com/trq212)
+
+### 核心文章系列："Lessons from Building Claude Code"
+
+1. **Prompt Caching Is Everything** (2026-02-19)
+   - 缓存输入令牌便宜 10 倍
+   - 缓存命中率下降 = 生产事件（SEV）
+   - 7 条架构经验
+
+2. **How We Use Skills** (2026-03-17)
+   - Anthropic 内部使用数百个 Skills
+   - 9 大 Skills 类型
+   - 5 条核心经验
+
+3. **Seeing like an Agent** (2026-02-27)
+   - 行动空间（action space）设计
+   - 渐进式披露用于工具发现
+
+---
+
+*最后更新：2026-04-08 - 已学习 Thariq Shihipar 文章并保存记忆*
