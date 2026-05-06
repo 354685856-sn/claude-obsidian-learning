@@ -1,35 +1,46 @@
-# Claude Code 架构学习项目
+# Claude Code + Obsidian Learning
 
-**作者**: 楠哥 (354685856-sn)
+Claude Code architecture notes and Obsidian-based knowledge system experiments for studying AI agent harness engineering.
 
-本项目包含对 Claude Code 架构的深度学习和分析，基于 miaomiaomiao1113 的架构分析 + 本地部署实践。
+## Why
 
-## 项目内容
+This repository is a learning workspace for turning Claude Code architecture study into a structured, AI-readable knowledge system.
 
-### 1. 完整架构图谱
-- [Obsidian 画布](./docs/architecture/Claude-Code-Complete-Architecture.canvas) - 结合原始架构分析与本地实践的完整图谱
-- 涵盖：终端输入 → 命令分发 → 环境感知 → 上下文压缩 → 大模型推理 → 工具执行 → 多轮对话 → 记忆保存
+The focus is not only "taking notes", but building a repeatable method for studying agent harness systems through Markdown, Obsidian, memory files, and project-level documentation.
 
-### 2. 核心架构文档
-- 端到端流程
-- 宿主工程架构
-- 三级防爆体系
-- 记忆系统（会话级 + 跨会话）
-- 权限路由引擎
-- MCP 协议层
+## What is inside
 
-### 3. 学习笔记
-- [架构学习笔记](./docs/study-notes.md) - 核心概念总结
+| Path | Purpose |
+|------|---------|
+| [CLAUDE-CODE-OBSIDIAN-LEARNING.md](./CLAUDE-CODE-OBSIDIAN-LEARNING.md) | Main learning note and project narrative. |
+| [docs/study-notes.md](./docs/study-notes.md) | Study notes for Claude Code architecture concepts. |
+| [claude-memory-qmd-config/](./claude-memory-qmd-config/) | Embedded memory configuration example. |
+| [README.md](./README.md) | Repository entrypoint. |
 
-## 快速开始
+## Learning map
 
-1. 使用 Obsidian 打开 `docs/architecture/Claude-Code-Complete-Architecture.canvas`
-2. 阅读 [架构文档索引](./docs/architecture/README.md)
-3. 按推荐顺序深入学习各模块
+```mermaid
+flowchart TD
+  A[Claude Code Architecture] --> B[Harness Components]
+  B --> C[Tools]
+  B --> D[Context]
+  B --> E[Memory]
+  B --> F[Permissions]
+  E --> G[Obsidian Vault]
+  G --> H[AI-readable Knowledge System]
+```
 
-## 核心概念
+## Recommended workflow
+
+1. Read [CLAUDE-CODE-OBSIDIAN-LEARNING.md](./CLAUDE-CODE-OBSIDIAN-LEARNING.md) as the main entry.
+2. Use [docs/study-notes.md](./docs/study-notes.md) to review the core architecture model.
+3. Compare the learning notes against your local Obsidian vault.
+4. Extract stable patterns into skills, templates, or memory entries.
+
+## Core concepts
 
 ### 洋葱模型
+
 ```
 最内层：query.ts → 直接与 API 对话
 中间层：Tool + compact → 手脚 + 防爆
@@ -42,6 +53,14 @@
 2. **防御性设计** - 贯穿始终的三重保护
 3. **异步影子系统** - 后台并发不阻塞
 
-## 许可证
+## Roadmap
+
+- [ ] Add a top-level Obsidian vault index.
+- [ ] Add project study templates for Cline, Aider, OpenHands, Goose, and Browser Use.
+- [ ] Add a glossary for harness engineering terms.
+- [ ] Link each architecture note to a reusable Claude Code skill or workflow.
+- [ ] Add diagrams for context, memory, permissions, and tool execution.
+
+## License
 
 CC BY 4.0
